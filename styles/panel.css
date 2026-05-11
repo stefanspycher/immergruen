@@ -1,0 +1,30 @@
+@layer panel {
+  .panel {
+    width: var(--panel-width);
+    height: 100%;
+    flex-shrink: 0;
+    overflow-y: auto;
+    background: var(--color-surface);
+    border-radius: var(--panel-radius);
+    container-type: inline-size;
+    container-name: panel;
+    anchor-name: --panel;
+  }
+
+  .panel[data-state="loading"] .panel-content { opacity: 0; }
+  .panel[data-state="ready"]   .panel-content { opacity: 1; }
+
+  .panel-content { padding: var(--space-md); }
+
+  .panel-backlinks {
+    border-top: 1px solid var(--color-border);
+    padding: var(--space-md);
+    margin-top: var(--space-xl);
+    font-size: var(--text-sm);
+  }
+
+  .backlinks-label {
+    color: var(--color-muted);
+    margin-bottom: var(--space-sm);
+  }
+}

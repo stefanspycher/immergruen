@@ -1,0 +1,15 @@
+@layer responsive {
+  @media (max-width: 799px) {
+    #panels { padding: 0; }
+
+    .panel { width: 100vw; }
+
+    /* Hide every panel except the last (the most recently opened). */
+    .panel:not(:last-child) { display: none; }
+
+    /* Frame overlap is a desktop affordance only. */
+    .panel + .panel::before { display: none; }
+
+    #site-header { padding-inline: var(--space-md); }
+  }
+}

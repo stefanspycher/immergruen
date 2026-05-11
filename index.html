@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading…</title>
+
+    <style>
+      @layer reset, tokens, layout, panel, typography, link, popover,
+             header, collapse, responsive, animations;
+    </style>
+
+    <link rel="stylesheet" href="design/tokens.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/panel.css">
+    <link rel="stylesheet" href="styles/typography.css">
+    <link rel="stylesheet" href="styles/link.css">
+    <link rel="stylesheet" href="styles/popover.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/collapse.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+
+    <!-- Optional animation files (drop-in; absent files are silently
+         ignored by the browser and degrade to instant transitions). -->
+    <link rel="stylesheet" href="design/animations/panel-open.css">
+    <link rel="stylesheet" href="design/animations/popover-in.css">
+  </head>
+
+  <body data-state="loading">
+    <header id="site-header" role="banner">
+      <a class="site-title" href="/" data-note=""></a>
+      <nav class="bookmarks" aria-label="Bookmarks"></nav>
+    </header>
+
+    <main id="panels" role="main"></main>
+
+    <div id="popover" class="popover" role="tooltip" hidden>
+      <div class="popover-content"></div>
+    </div>
+
+    <template id="panel-template">
+      <article class="panel" data-note-id="" data-state="loading">
+        <header class="panel-header">
+          <h2 class="panel-title"></h2>
+        </header>
+        <div class="panel-body">
+          <div class="panel-content"></div>
+          <footer class="panel-backlinks" hidden></footer>
+        </div>
+      </article>
+    </template>
+
+    <script type="module" src="scripts/app.js"></script>
+  </body>
+</html>

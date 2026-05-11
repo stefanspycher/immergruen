@@ -1,0 +1,14 @@
+@layer link {
+  .internal-link { color: var(--color-link); }
+
+  .internal-link[data-open="true"] {
+    color: var(--color-link-open);
+    text-decoration-style: dotted;
+  }
+
+  a[target="_blank"]::after {
+    content: var(--icon-external);
+    font-size: 0.7em;
+    opacity: 0.5;
+  }
+}

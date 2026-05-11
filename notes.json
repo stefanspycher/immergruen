@@ -1,0 +1,142 @@
+{
+  "notes": {
+    "Home": {
+      "title": "Home",
+      "path": "content/Home.md",
+      "backlinks": []
+    },
+    "adaptive-leadership-and-system-design": {
+      "title": "Adaptive Leadership and System Design",
+      "path": "content/adaptive-leadership-and-system-design.md",
+      "backlinks": [
+        "Home",
+        "leader-judgment-and-people-typology"
+      ]
+    },
+    "ai-human-value-and-opportunity": {
+      "title": "AI, Human Value, and the Translation Opportunity",
+      "path": "content/ai-human-value-and-opportunity.md",
+      "backlinks": [
+        "Home",
+        "context-engineering",
+        "spec-driven-development"
+      ]
+    },
+    "async-leadership-and-communication": {
+      "title": "Async Leadership and Communication",
+      "path": "content/async-leadership-and-communication.md",
+      "backlinks": [
+        "Home",
+        "information-quality-and-access",
+        "leader-judgment-and-people-typology"
+      ]
+    },
+    "context-engineering": {
+      "title": "Context Engineering",
+      "path": "content/context-engineering.md",
+      "backlinks": [
+        "Home",
+        "ai-human-value-and-opportunity",
+        "spec-driven-development"
+      ]
+    },
+    "information-quality-and-access": {
+      "title": "Information Quality and Access",
+      "path": "content/information-quality-and-access.md",
+      "backlinks": [
+        "Home",
+        "async-leadership-and-communication"
+      ]
+    },
+    "knowledge-retention-and-formulation": {
+      "title": "Knowledge Retention and Formulation",
+      "path": "content/knowledge-retention-and-formulation.md",
+      "backlinks": [
+        "Home",
+        "information-quality-and-access",
+        "memory-encoding-and-mnemonics",
+        "motivation-and-starting"
+      ]
+    },
+    "leader-judgment-and-people-typology": {
+      "title": "Leader Judgment: Reading People and Knowing Your Limits",
+      "path": "content/leader-judgment-and-people-typology.md",
+      "backlinks": [
+        "Home",
+        "adaptive-leadership-and-system-design",
+        "async-leadership-and-communication"
+      ]
+    },
+    "memory-encoding-and-mnemonics": {
+      "title": "Memory Encoding and Mnemonics",
+      "path": "content/memory-encoding-and-mnemonics.md",
+      "backlinks": [
+        "Home",
+        "knowledge-retention-and-formulation",
+        "motivation-and-starting"
+      ]
+    },
+    "motivation-and-starting": {
+      "title": "Motivation and Starting",
+      "path": "content/motivation-and-starting.md",
+      "backlinks": [
+        "Home",
+        "knowledge-retention-and-formulation",
+        "memory-encoding-and-mnemonics"
+      ]
+    },
+    "organizational-structure-incentives-debt": {
+      "title": "Organizational Structure, Incentives, and Debt",
+      "path": "content/organizational-structure-incentives-debt.md",
+      "backlinks": [
+        "Home",
+        "systems-archetypes-and-patterns",
+        "systems-thinking-foundations"
+      ]
+    },
+    "spec-driven-development": {
+      "title": "Spec-Driven Development with AI",
+      "path": "content/spec-driven-development.md",
+      "backlinks": [
+        "Home",
+        "ai-human-value-and-opportunity",
+        "context-engineering"
+      ]
+    },
+    "systems-archetypes-and-patterns": {
+      "title": "Systems Archetypes and Patterns",
+      "path": "content/systems-archetypes-and-patterns.md",
+      "backlinks": [
+        "Home",
+        "organizational-structure-incentives-debt",
+        "systems-thinking-foundations"
+      ]
+    },
+    "systems-thinking-foundations": {
+      "title": "Systems Thinking: Foundations",
+      "path": "content/systems-thinking-foundations.md",
+      "backlinks": [
+        "Home",
+        "adaptive-leadership-and-system-design",
+        "organizational-structure-incentives-debt",
+        "systems-archetypes-and-patterns"
+      ]
+    }
+  },
+  "titles": {
+    "home": "Home",
+    "adaptive leadership and system design": "adaptive-leadership-and-system-design",
+    "ai, human value, and the translation opportunity": "ai-human-value-and-opportunity",
+    "async leadership and communication": "async-leadership-and-communication",
+    "context engineering": "context-engineering",
+    "information quality and access": "information-quality-and-access",
+    "knowledge retention and formulation": "knowledge-retention-and-formulation",
+    "leader judgment: reading people and knowing your limits": "leader-judgment-and-people-typology",
+    "memory encoding and mnemonics": "memory-encoding-and-mnemonics",
+    "motivation and starting": "motivation-and-starting",
+    "organizational structure, incentives, and debt": "organizational-structure-incentives-debt",
+    "spec-driven development with ai": "spec-driven-development",
+    "systems archetypes and patterns": "systems-archetypes-and-patterns",
+    "systems thinking: foundations": "systems-thinking-foundations"
+  }
+}

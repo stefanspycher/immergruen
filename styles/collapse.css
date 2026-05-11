@@ -1,0 +1,16 @@
+@layer collapse {
+  /* The panel-header is the collapsed-state title strip. While the panel
+     is expanded, the in-content H1 (injected by `renderer.injectTitleHeading`)
+     is the visible title, so the header element stays hidden to avoid
+     duplicating it. */
+  .panel:not([data-collapsed="true"]) .panel-header { display: none; }
+
+  .panel[data-collapsed="true"] .panel-content,
+  .panel[data-collapsed="true"] .panel-backlinks { display: none; }
+
+  .panel[data-collapsed="true"] .panel-header {
+    writing-mode: vertical-rl;
+    height: 100%;
+    padding: var(--space-sm);
+  }
+}

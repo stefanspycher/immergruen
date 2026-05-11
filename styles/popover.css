@@ -1,0 +1,39 @@
+@layer popover {
+  .popover {
+    position: fixed;
+    width: var(--popover-width);
+    max-height: var(--popover-max-height);
+    overflow: hidden;
+    background: var(--color-surface-raised);
+    border-radius: var(--panel-radius);
+    box-shadow: var(--shadow-popover);
+    pointer-events: none;
+    z-index: var(--z-popover);
+
+    /* Fade-and-clip the bottom edge so long content does not appear
+       hard-truncated. The popover is intentionally not scrollable —
+       see SPEC.md §9. */
+    mask-image: linear-gradient(
+      to bottom,
+      black 0,
+      black calc(100% - var(--popover-fade)),
+      transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      black 0,
+      black calc(100% - var(--popover-fade)),
+      transparent 100%
+    );
+  }
+
+  .popover[hidden] { display: none; }
+
+  /* Inner content area: padded so prose does not bleed to the popover edge,
+     and typographically smaller so the popover reads as secondary to the
+     underlying note panels. */
+  .popover-content {
+    padding: var(--space-md);
+    font-size: 0.8em;
+  }
+}

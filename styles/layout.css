@@ -1,0 +1,37 @@
+@layer layout {
+  body[data-state="loading"] #panels { visibility: hidden; }
+
+  #panels {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: calc(100dvh - var(--header-height));
+    scroll-snap-type: x proximity;
+    gap: 0;
+    padding: var(--space-panel-gap);
+  }
+
+  .panel {
+    scroll-snap-align: start;
+    position: relative;
+  }
+
+  /* Frames overlap, content does not — SPEC.md §10. The pseudo-element
+     paints the panel's frame leftward without shifting its content box. */
+  .panel + .panel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(var(--panel-overlap) * -1);
+    width: var(--panel-overlap);
+    background: var(--color-surface);
+    border-top-left-radius: var(--panel-radius);
+    border-bottom-left-radius: var(--panel-radius);
+    box-shadow: var(--shadow-panel-edge);
+    pointer-events: none;
+    z-index: -1;
+  }
+}

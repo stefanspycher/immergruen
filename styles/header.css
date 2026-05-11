@@ -1,0 +1,33 @@
+@layer header {
+  #site-header {
+    position: sticky;
+    top: 0;
+    z-index: var(--z-header);
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding-inline: var(--space-lg);
+    background: var(--color-header-bg);
+    backdrop-filter: blur(var(--header-blur));
+    color: var(--color-text);
+    font-family: var(--font-body);
+  }
+
+  .site-title {
+    font-size: var(--text-lg);
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .bookmarks {
+    display: flex;
+    gap: var(--space-md);
+  }
+
+  .bookmark-link {
+    color: var(--color-link);
+    text-decoration: none;
+  }
+}

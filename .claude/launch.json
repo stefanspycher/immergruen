@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "immergruen",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["build/serve.js", "8766"],
+      "port": 8766
+    },
+    {
+      "name": "immergruen-subpath",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8768", "--directory", "/tmp/immergruen-subpath-test"],
+      "port": 8768
+    }
+  ]
+}

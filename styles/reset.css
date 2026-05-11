@@ -1,0 +1,14 @@
+@layer reset {
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    line-height: var(--line-height);
+    -webkit-text-size-adjust: 100%;
+  }
+  img, svg { max-width: 100%; display: block; }
+  button { font: inherit; }
+}

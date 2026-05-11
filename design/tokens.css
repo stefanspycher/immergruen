@@ -1,0 +1,54 @@
+@layer tokens {
+  :root {
+    /* Layout */
+    --panel-width: 585px;
+    --panel-overlap: 40px;
+    --panel-radius: 8px;
+    --header-height: 56px;
+    --breakpoint: 800px;
+    --collapse-threshold: 80px;
+
+    /* Spacing */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-panel-gap: 16px;
+
+    /* Type — system stack only, never a web font */
+    --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 Helvetica, Arial, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+                 "Liberation Mono", monospace;
+    --text-base: 16px;
+    --text-sm: 14px;
+    --text-lg: 20px;
+    --line-height: 1.5;
+
+    /* Color */
+    --color-bg: #ffffff;
+    --color-surface: #fafafa;
+    --color-surface-raised: #ffffff;
+    --color-text: #1a1a1a;
+    --color-muted: #6a6a6a;
+    --color-border: #e0e0e0;
+    --color-link: #1a73e8;
+    --color-link-open: #20a020;
+    --color-header-bg: rgba(255, 255, 255, 0.85);
+
+    /* Effects */
+    --shadow-popover: 0 4px 24px rgba(0, 0, 0, 0.15);
+    --shadow-panel-edge: -4px 0 8px rgba(0, 0, 0, 0.06);
+    --header-blur: 8px;
+    --popover-width: 500px;
+    --popover-max-height: 400px;
+    --popover-fade: 32px;
+    --popover-delay-ms: 300;
+    --z-header: 100;
+    --z-popover: 200;
+
+    /* Misc */
+    --icon-external: " ↗";
+  }
+}
