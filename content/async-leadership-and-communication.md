@@ -76,3 +76,4 @@ See also: [[leader-judgment-and-people-typology|Leader Judgment: Reading People 
 ## Further Reading
 
 - [No, We Won't Have a Video Call for That](https://xahteiwi.eu/resources/presentations/no-we-wont-have-a-video-call-for-that/?s=03): the full talk on distributed team communication
+- [Eskalation (projektmagazin.de)](https://www.projektmagazin.de/glossarterm/eskalation): the German article that originally shaped the framing of escalation as a neutral coordination tool (German)
