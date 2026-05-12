@@ -48,6 +48,8 @@ Every video call requires:
 
 Recurring team meetings serve an emotional sync function, not an information function. One per week is usually sufficient; skipping when needed causes no harm if the team externalizes information well.
 
+See also: [[libin-communication-pyramid|Libin's Communication Pyramid]] for an interesting alternative mental model to video calls.
+
 ## Briefing People: The 5-Paragraph Format
 
 For important briefings to a group, use this structure:
