@@ -2,7 +2,7 @@ Welcome. This is a personal note garden built in the spirit of [Andy Matuschak's
 
 The idea is simple: notes grow over time, link to each other, and accumulate meaning rather than being discarded after a single use.
 
-Notes are often harmonized, contextualized and translated by AI. The underlying thoughts are mine, inspired by great Thinkers and Experts in their fields, and by experiences & observations made during 26+ in tech.
+Some Notes are contextualized and translated by AI. The underlying thoughts are mine, inspired by great Thinkers and Experts in their fields, and by my own experiences & observations made during 26+ years in tech.
 
 
 ## Learning & Knowledge Retention
