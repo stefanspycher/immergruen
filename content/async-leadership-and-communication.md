@@ -32,7 +32,7 @@ A capable distributed team habitually externalizes information. The default comm
 
 Sending someone a direct message or mention is the digital equivalent of walking up and interrupting them. It compels a response. Use it only when the topic genuinely requires real-time back-and-forth and the interruption cost is justified.
 
-Never send a naked ping ("hey", "ping", "?"). Always include context and, if non-urgent, say so explicitly.
+Never send a naked ping ("hey", "ping", "?"). Always include context and, if non-urgent, say so explicitly. [[bluf-bottom-line-up-front|BLUF: Bottom Line Up Front]] structure applies: lead with the ask, put context after.
 
 ### Video calls: when and how
 
@@ -71,7 +71,7 @@ Escalation has two distinct meanings:
 1. The _worsening_ of a conflict (the common negative connotation)
 2. The _referral_ of an issue to a higher decision-making level (a neutral coordination tool)
 
-The negative connotation causes leaders to avoid escalating when they should, leaving priority conflicts unresolved and problems invisible to those who could fix them. Escalation is a tool that resolves conflicts that cannot be handled at the current level, creates visibility on challenges, and signals good judgment about where decisions belong.
+The negative connotation causes leaders to avoid escalating when they should, leaving priority conflicts unresolved and problems invisible to those who could fix them. Escalation is a tool that resolves conflicts that cannot be handled at the current level, creates visibility on challenges, and signals good judgment about where decisions belong. [[escalation-as-a-leadership-tool|Escalation as a Leadership Tool]] covers when and how to escalate, and how to frame it so it reads as coordination rather than complaint.
 
 See also: [[leader-judgment-and-people-typology|Leader Judgment: Reading People and Knowing Your Limits]] for the people-reading dimension of these decisions, and [[information-quality-and-access|Information Quality and Access]] for how information architecture supports async communication.
 

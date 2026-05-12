@@ -27,8 +27,18 @@
       "path": "content/async-leadership-and-communication.md",
       "backlinks": [
         "Home",
+        "bluf-bottom-line-up-front",
+        "escalation-as-a-leadership-tool",
         "information-quality-and-access",
-        "leader-judgment-and-people-typology"
+        "leader-judgment-and-people-typology",
+        "libin-communication-pyramid"
+      ]
+    },
+    "bluf-bottom-line-up-front": {
+      "title": "BLUF: Bottom Line Up Front",
+      "path": "content/bluf-bottom-line-up-front.md",
+      "backlinks": [
+        "async-leadership-and-communication"
       ]
     },
     "context-engineering": {
@@ -40,12 +50,20 @@
         "spec-driven-development"
       ]
     },
+    "escalation-as-a-leadership-tool": {
+      "title": "Escalation as a Leadership Tool",
+      "path": "content/escalation-as-a-leadership-tool.md",
+      "backlinks": [
+        "async-leadership-and-communication"
+      ]
+    },
     "information-quality-and-access": {
       "title": "Information Quality and Access",
       "path": "content/information-quality-and-access.md",
       "backlinks": [
         "Home",
-        "async-leadership-and-communication"
+        "async-leadership-and-communication",
+        "escalation-as-a-leadership-tool"
       ]
     },
     "knowledge-retention-and-formulation": {
@@ -64,6 +82,14 @@
       "backlinks": [
         "Home",
         "adaptive-leadership-and-system-design",
+        "async-leadership-and-communication",
+        "escalation-as-a-leadership-tool"
+      ]
+    },
+    "libin-communication-pyramid": {
+      "title": "Libin's Communication Pyramid",
+      "path": "content/libin-communication-pyramid.md",
+      "backlinks": [
         "async-leadership-and-communication"
       ]
     },
@@ -103,6 +129,13 @@
         "context-engineering"
       ]
     },
+    "specification-craft-and-domain-expert-engineering": {
+      "title": "Notes on a Talk by Boris Cherny (AI Ascent 2026)",
+      "path": "content/specification-craft-and-domain-expert-engineering.md",
+      "backlinks": [
+        "spec-driven-development"
+      ]
+    },
     "systems-archetypes-and-patterns": {
       "title": "Systems Archetypes and Patterns",
       "path": "content/systems-archetypes-and-patterns.md",
@@ -128,14 +161,18 @@
     "adaptive leadership and system design": "adaptive-leadership-and-system-design",
     "ai, human value, and the translation opportunity": "ai-human-value-and-opportunity",
     "async leadership and communication": "async-leadership-and-communication",
+    "bluf: bottom line up front": "bluf-bottom-line-up-front",
     "context engineering": "context-engineering",
+    "escalation as a leadership tool": "escalation-as-a-leadership-tool",
     "information quality and access": "information-quality-and-access",
     "knowledge retention and formulation": "knowledge-retention-and-formulation",
     "leader judgment: reading people and knowing your limits": "leader-judgment-and-people-typology",
+    "libin's communication pyramid": "libin-communication-pyramid",
     "memory encoding and mnemonics": "memory-encoding-and-mnemonics",
     "motivation and starting": "motivation-and-starting",
     "organizational structure, incentives, and debt": "organizational-structure-incentives-debt",
     "spec-driven development with ai": "spec-driven-development",
+    "notes on a talk by boris cherny (ai ascent 2026)": "specification-craft-and-domain-expert-engineering",
     "systems archetypes and patterns": "systems-archetypes-and-patterns",
     "systems thinking: foundations": "systems-thinking-foundations"
   }

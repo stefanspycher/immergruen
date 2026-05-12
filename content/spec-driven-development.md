@@ -18,7 +18,7 @@ When AI can generate code quickly and cheaply, the constraint in software develo
 
 **Specs age better than code.** A well-written spec from years ago still communicates intent. A codebase without a spec often does not.
 
-This reframes the developer's role: from someone who writes code to someone who **architects solutions and validates correctness.**
+This reframes the developer's role: from someone who writes code to someone who **architects solutions and validates correctness.** [[specification-craft-and-domain-expert-engineering|The Specification Craft: What Comes After AI Writes the Code]] examines what that shift demands in practice — boundary definition, negative space, and test imagination as learnable skills.
 
 ## The Workflow
 
