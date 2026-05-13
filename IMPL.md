@@ -72,7 +72,11 @@ The default theme. An implementer must create this file verbatim — every token
     --color-header-bg: rgba(255, 255, 255, 0.85);
 
     /* Effects */
-    --shadow-popover: 0 4px 24px rgba(0, 0, 0, 0.15);
+    --shadow-popover:
+      0 0 0 1px rgba(0, 0, 0, 0.04),
+      0 4px 12px rgba(0, 0, 0, 0.08),
+      0 20px 64px rgba(0, 0, 0, 0.13);
+    --popover-animation-duration: 200ms;
     --shadow-panel-edge: -4px 0 8px rgba(0, 0, 0, 0.06);
     --header-blur: 8px;
     --popover-width: 500px;
@@ -1011,22 +1015,20 @@ One instance, repositioned and refilled on each trigger. Never cloned.
     box-shadow: var(--shadow-popover);
     pointer-events: none;
     z-index: var(--z-popover);
+  }
 
-    /* Fade-and-clip the bottom edge so long content does not appear
-       hard-truncated. The popover is intentionally not scrollable —
-       see SPEC.md §9. */
-    mask-image: linear-gradient(
-      to bottom,
-      black 0,
-      black calc(100% - var(--popover-fade)),
-      transparent 100%
-    );
-    -webkit-mask-image: linear-gradient(
-      to bottom,
-      black 0,
-      black calc(100% - var(--popover-fade)),
-      transparent 100%
-    );
+  /* Gradient overlay that fades the bottom edge of overflowing content.
+     Using ::after rather than mask-image so the box-shadow is not masked —
+     mask-image composites the entire element layer including its shadow. */
+  .popover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: var(--popover-fade);
+    background: linear-gradient(to bottom, transparent, var(--color-surface-raised));
+    pointer-events: none;
   }
 
   .popover[hidden] { display: none; }
@@ -1128,7 +1130,7 @@ async function loadContent(id) {
 }
 ```
 
-`POPOVER_DELAY` and `POPOVER_WIDTH` are read from tokens once at module init via `getComputedStyle` — the design file controls them, not JS constants. The popover never scrolls and never receives pointer events, so leaving the link unconditionally dismisses it; the mask-image fade signals to the reader that more content exists in the linked note.
+`POPOVER_DELAY` and `POPOVER_WIDTH` are read from tokens once at module init via `getComputedStyle` — the design file controls them, not JS constants. The popover never scrolls and never receives pointer events, so leaving the link unconditionally dismisses it; the bottom-edge gradient fade signals to the reader that more content exists in the linked note.
 
 `wire(linkEl)` is idempotent — the `data-popover-wired` flag prevents double-binding when the same link element is re-wired across renders.
 
@@ -1549,6 +1551,7 @@ Each extension maps to a single file swap or addition with no changes elsewhere.
 | Touch popover | Add touch handlers in `scripts/popover.js`; CSS and HTML unchanged |
 | New theme | Replace `design/tokens.css` only |
 | New panel animation | Replace `design/animations/panel-open.css` only |
+| New popover animation | Replace `design/animations/popover-in.css` only |
 | Search | Add `scripts/search.js`; extend the header HTML; add a full-text field in the index |
 
 ---

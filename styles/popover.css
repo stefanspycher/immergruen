@@ -9,29 +9,24 @@
     box-shadow: var(--shadow-popover);
     pointer-events: none;
     z-index: var(--z-popover);
+  }
 
-    /* Fade-and-clip the bottom edge so long content does not appear
-       hard-truncated. The popover is intentionally not scrollable —
-       see SPEC.md §9. */
-    mask-image: linear-gradient(
-      to bottom,
-      black 0,
-      black calc(100% - var(--popover-fade)),
-      transparent 100%
-    );
-    -webkit-mask-image: linear-gradient(
-      to bottom,
-      black 0,
-      black calc(100% - var(--popover-fade)),
-      transparent 100%
-    );
+  /* Gradient overlay that fades the bottom edge of overflowing content.
+     Using ::after rather than mask-image so the box-shadow is not masked —
+     mask-image composites the entire element layer including its shadow. */
+  .popover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: var(--popover-fade);
+    background: linear-gradient(to bottom, transparent, var(--color-surface-raised));
+    pointer-events: none;
   }
 
   .popover[hidden] { display: none; }
 
-  /* Inner content area: padded so prose does not bleed to the popover edge,
-     and typographically smaller so the popover reads as secondary to the
-     underlying note panels. */
   .popover-content {
     padding: var(--space-md);
     font-size: 0.8em;

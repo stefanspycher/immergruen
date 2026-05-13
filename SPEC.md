@@ -225,6 +225,8 @@ Hovering over an internal link displays a floating panel showing a preview of th
 
 **Content:** The popover renders the linked note's content using the same markdown rendering pipeline as the main note view, capped at a fixed maximum height. Content beyond the maximum is faded and clipped — the popover is not scrollable. To read the full content, the user opens the note in a panel.
 
+**Appearance animation:** The popover enters with a brief animation: it scales up from a slightly reduced size and fades in simultaneously. A subtle blur dissolves away during the same motion. The exit is instant — the popover is removed from display without a reverse animation.
+
 **Dismissal:** The popover is dismissed when the cursor leaves the link element.
 
 **Non-blocking:** The popover must not intercept clicks, scroll, or other interactions on the underlying content. Because the popover never receives pointer events, the cursor cannot enter it; this is intentional and the reason scrollability is not provided.
