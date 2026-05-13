@@ -71,6 +71,7 @@
       "path": "content/knowledge-retention-and-formulation.md",
       "backlinks": [
         "Home",
+        "drafts/anki",
         "information-quality-and-access",
         "memory-encoding-and-mnemonics",
         "motivation-and-starting"
@@ -83,7 +84,8 @@
         "Home",
         "adaptive-leadership-and-system-design",
         "async-leadership-and-communication",
-        "escalation-as-a-leadership-tool"
+        "escalation-as-a-leadership-tool",
+        "spec-author-test-blindness"
       ]
     },
     "libin-communication-pyramid": {
@@ -98,6 +100,7 @@
       "path": "content/memory-encoding-and-mnemonics.md",
       "backlinks": [
         "Home",
+        "drafts/anki",
         "knowledge-retention-and-formulation",
         "motivation-and-starting"
       ]
@@ -120,19 +123,26 @@
         "systems-thinking-foundations"
       ]
     },
+    "spec-author-test-blindness": {
+      "title": "Who Should Test the Specification?",
+      "path": "content/spec-author-test-blindness.md",
+      "backlinks": []
+    },
     "spec-driven-development": {
       "title": "Spec-Driven Development with AI",
       "path": "content/spec-driven-development.md",
       "backlinks": [
         "Home",
         "ai-human-value-and-opportunity",
-        "context-engineering"
+        "context-engineering",
+        "spec-author-test-blindness"
       ]
     },
     "specification-craft-and-domain-expert-engineering": {
       "title": "Notes on a Talk by Boris Cherny (AI Ascent 2026)",
       "path": "content/specification-craft-and-domain-expert-engineering.md",
       "backlinks": [
+        "spec-author-test-blindness",
         "spec-driven-development"
       ]
     },
@@ -152,8 +162,14 @@
         "Home",
         "adaptive-leadership-and-system-design",
         "organizational-structure-incentives-debt",
+        "spec-author-test-blindness",
         "systems-archetypes-and-patterns"
       ]
+    },
+    "drafts/anki": {
+      "title": "Anki",
+      "path": "content/drafts/anki.md",
+      "backlinks": []
     }
   },
   "titles": {
@@ -171,9 +187,11 @@
     "memory encoding and mnemonics": "memory-encoding-and-mnemonics",
     "motivation and starting": "motivation-and-starting",
     "organizational structure, incentives, and debt": "organizational-structure-incentives-debt",
+    "who should test the specification?": "spec-author-test-blindness",
     "spec-driven development with ai": "spec-driven-development",
     "notes on a talk by boris cherny (ai ascent 2026)": "specification-craft-and-domain-expert-engineering",
     "systems archetypes and patterns": "systems-archetypes-and-patterns",
-    "systems thinking: foundations": "systems-thinking-foundations"
+    "systems thinking: foundations": "systems-thinking-foundations",
+    "anki": "drafts/anki"
   }
 }
