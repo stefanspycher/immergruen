@@ -215,12 +215,15 @@ Two stylesheets carry no app behaviour but anchor the visual baseline. They are 
     color: var(--color-muted);
   }
 
-  .panel-content table {
+  .panel-content table,
+  .popover-content table {
     border-collapse: collapse;
     width: 100%;
   }
   .panel-content th,
-  .panel-content td {
+  .panel-content td,
+  .popover-content th,
+  .popover-content td {
     border: 1px solid var(--color-border);
     padding: var(--space-xs) var(--space-sm);
     text-align: left;
